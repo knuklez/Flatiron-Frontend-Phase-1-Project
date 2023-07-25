@@ -76,3 +76,49 @@ main {
     border: 4px solid transparent;
     transition: var(--transition);
 }
+
+
+.gallery:hover {
+    border-color: var(--color-white);
+    background: transparent;
+ }
+
+.gallery:hover img {
+    filter: saturate(1);
+ }
+
+/*targeting image used as thumbnail*/
+.gallery_images-large img {
+    padding: 0.3rem;
+    aspect-ratio: 3/2;
+    border-radius: 0.7rem;
+        /*transform: scale(1.2); /*Added to enlarge image on hover*/
+}
+
+/*NEW HOVER for IMAGE*/
+
+/*.gallery_images-large:hover img {
+    transform: scale(2.5);
+    }*/
+
+    .gallery_images-large img:hover {
+        transform: scale(2.5);
+    }
+    
+    /*targeting surrounding images from gallery_images-more */
+    .gallery_images-satellite {
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 0.8rem;
+    }
+    
+    /*targeting specific images from gallery_images_more */
+    .gallery_images-satellite img {
+        aspect-ratio: 5/4;
+        border-radius: 0.7rem;
+    }
+    
+    /*NEW HOVER FOR SMALL IMAGES*/
+    .gallery_images-satellite img:hover {
+        transform: scale(2.5);
+    }
