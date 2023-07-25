@@ -132,3 +132,30 @@ main {
     .gallery_info p {
         font-weight: 600;
     }
+
+    /*Media Queries for small screens */
+@media screen and (max-width: 600px) {
+    body {
+        display: block; /* instead of "grid" as we were using for larger displays like a laptop */
+        padding: 2rem 1rem 4rem;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+        background: transparent;
+    }
+
+    .category {
+        padding: 0.7rem 1rem;
+        display: inline-block;
+    }
+
+    .galleries {
+        /* we want the galleries stacked on top of each other in a single column on a MOBILE device*/
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+}
