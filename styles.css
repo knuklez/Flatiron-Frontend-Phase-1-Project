@@ -122,3 +122,13 @@ main {
     .gallery_images-satellite img:hover {
         transform: scale(2.5);
     }
+
+    .gallery_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .gallery_info p {
+        font-weight: 600;
+    }
