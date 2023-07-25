@@ -23,3 +23,29 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     --transition: all 300ms ease; /*could use ease-in or ease-out as well*/
 
 }
+
+
+body {
+    background: var(--color-body-bg);
+    display: grid; /*to center an object, use grid*/
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+main {
+    background: rgba(168, 172, 161, 0.411);/*background: var(--color-light);*/
+    width: 70%;
+    padding: 3rem;
+    border-radius: 1rem;
+}
