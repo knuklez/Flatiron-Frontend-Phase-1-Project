@@ -49,3 +49,10 @@ main {
     padding: 3rem;
     border-radius: 1rem;
 }
+
+
+.btn:hover {
+    background: rgb(117, 44, 15);/*background: var(--color-dark);*/
+    color: var(--color-white);
+    cursor: pointer; /*turns cursor into a pointer when hovering*/
+}
