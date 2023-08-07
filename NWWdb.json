@@ -1,10 +1,10 @@
 {
-  "Natural Wonders of the World": [
+  "NWW": [
     {
       "id": 1,
       "name": "Grand Canyon",
-      "Location": "United States, North America",
-      "Geographic-Coordinates": "36.0544° N, 112.1401° W",
+      "location": "United States, North America",
+      "geographic-coordinates": "36.0544° N, 112.1401° W",
       "image-1": "https://www.publicdomainpictures.net/pictures/210000/velka/grand-canyon-panorama-1489123405Tq5.jpg",
       "image-2": "https://www.publicdomainpictures.net/pictures/150000/velka/sunset-on-grand-canyon.jpg",
       "image-space": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Grand_Canyon_from_space.JPG/800px-Grand_Canyon_from_space.JPG?20140515002533",
@@ -13,22 +13,22 @@
     {
       "id": 2,
       "name": "Victoris Falls",
-      "Location": "Border of Zambia and Zimbabwe, Africa",
-      "Geographic-Coordinates": "17.9255° S, 25.8585° E",
-      "image": "https://as2.ftcdn.net/v2/jpg/02/51/32/31/1000_F_251323196_PCHazdC7OTij8unGC40IJ2CUTtt8PPWf.jpg",
+      "location": "Border of Zambia and Zimbabwe, Africa",
+      "geographic-coordinates": "17.9255° S, 25.8585° E",
+      "image-1": "https://as2.ftcdn.net/v2/jpg/02/51/32/31/1000_F_251323196_PCHazdC7OTij8unGC40IJ2CUTtt8PPWf.jpg",
       "image-2":"https://as2.ftcdn.net/v2/jpg/00/46/56/69/1000_F_46566941_YHGdruL6JPR2TaDzJwmttpcm79gDWCeu.jpg",
       "image-space": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Satellite_view_of_Victoria_Falls.jpg",
-      "likes": 8
+      "likes": 5
     },
     {
       "id": 3,
       "name": "Great Barrier Reef",
-      "Location": "Australia",
-      "Geographic-Coordinates": "18.2871° S, 147.6992° E",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Amazing_Great_Barrier_Reef_1.jpg",
+      "location": "Australia",
+      "geographic-coordinates": "18.2871° S, 147.6992° E",
+      "image-1": "https://upload.wikimedia.org/wikipedia/commons/6/62/Amazing_Great_Barrier_Reef_1.jpg",
       "image-2":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Great_barrier_reef.JPG/1200px-Great_barrier_reef.JPG?20160517160525",
       "image-space": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Phytoplanton_Bloom_in_the_Great_Barrier_Reef.jpg/815px-Phytoplanton_Bloom_in_the_Great_Barrier_Reef.jpg?20110820185454",
-      "likes": 3
+      "likes": 5
     }    
   ]
 }
