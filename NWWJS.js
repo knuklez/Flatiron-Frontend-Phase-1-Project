@@ -1,64 +1,74 @@
-/* AAAAA console.log("main.js connected");
+const API = "http://localhost:3000/NWW"
 
-const searchTermsInput = document.body.querySelector("#search-terms");
-AAAA */
-//adding and querying api
+let addNewWonder = false;
 
-/* AAAA const getMealCategories = async () => {
-  const mealCategoriesApiURL =
-    "https://www.themealdb.com/api/json/v1/1/categories.php";
-* AAAA/
+document.addEventListener("DOMContentLoaded", () => {
+  const addBtn = document.querySelector("#submit-wonder-btn");
+  const wonderFormContainer = document.querySelector(".container");
 
-  //try/catch is an error checking/catching method (check mdn).  see the location of the code.  has been moved inside of the try/catch - I left the original code outside of the try/catch.
+  fetch(API)
+    .then((response) => response.json())
+    .then(renderNWW)
 
-  /* **********try/catch example using code from elswhere in the file/
-    try {
-    const response = await fetch(mealCategoriesApiURL);
-    const data = response.json()
-    console.log("data:", data); //data variable must be defined inside of the try/catch
-    } catch (error) {
-     console.log(error)
-     alert("something went wrong, try again later")   
-    }
-    */
+  function renderNWW(wondersList){
 
-  //need to do a fetch = review "await"
 
- /* AAAA  const response = await fetch(mealCategoriesApiURL); //if use await here then also use on line 30 - const data = await response.json()
-AAAA */
-  //could use "then" method instead of "await" method by adding it to the "fetch" - const response = await fetch(mealCategoriesApiURL).then(response => json())
+    wondersList.forEach((wonder) => {
+    const instance = document.createElement("div")
+    instance.classList.add = ("instance")
 
-  //const data = response.json()  //needed to add await as line 26 is asynch but line 30 is Notification.  only getting a promise as output in live code
+    const h2 = document.createElement("h2")
+    h2.textContent = NWW.name
 
- /* AAAA const data = await response.json();
+    instance.appendChild(h2)
 
- * AAAA/
+    const h2 = document.createElement("h2")
+    h2.textContent = NWW.location
 
-  //console.log("data: ", data) //tested and used instead of console.log(data)
+    instance.appendChild(h2)
 
-  //const data = response.json converts response into a json format - like saving a letter as a ".doc" file.  can use as a json file at this point
+    const h2 = document.createElement("h2")
+    h2.textContent = NWW.geographic-coordinates
 
-  //const data = response.json() added after verifying after fetch worked
+    instance.appendChild(h2)
 
-  //console.log(response) use to see if working (it is working) - tested
+    const img1 = document.createElement("img1")
+    img1.classList.add = ("wonderImg1")
+    img1.src = NWW.image-1 
 
-  //console.log(data) to see response in a json format - tested
-};
-// review purpose of "async"
+    instance.appendChild(img1)
 
-/* AAAA const handleFormInputFocus = async () => {
-  console.log("focus occurred");
+    const img2 = document.createElement("img2")
+    img2.classList.add = ("wonderImg2")
+    img2.src = NWW.image-2 
 
-  await getMealCategories();
-};
-searchTermsInput.addEventListener("focus", handleFormInputFocus);
-AAAA */
+    instance.appendChild(img2)
 
-//EVENT LISTENER
-const button = document.querySelector(".btn");
+    const imgSpace = document.createElement("imgSpace")
+    imgSpace.classList.add = ("wonderImgSpace")
+    imgSpace.src = NWW.image-space 
 
-button.addEventListener("click",  () => {
-    alert("Event Listener Requirement Met")
-}
-);
+    instance.appendChild(imgSpace)
 
+    const p = document.createElement("p")
+    p.textContent = `${NWW.likes} Likes`
+
+    const button = document.createElement("button")
+    button.classList.add("Like-btn")
+    button.setAttribute("id", "[instamce_id]")
+
+    instance.appendChild(p)
+
+  })
+  }
+
+  addBtn.addEventListener("click", () => {
+      
+  addNewWonder = !addNewWonder;
+  if (addNewWonder) {
+    wonderFormContainer.style.display = "block";
+  } else {
+    wonderFormContainer.style.display = "none";
+  }
+  });
+});
